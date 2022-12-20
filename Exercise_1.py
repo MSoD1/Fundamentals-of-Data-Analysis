@@ -47,7 +47,7 @@ pairs = 'th'
 for i in range(1, 1000):
     # Get the weights where the previous character is the last character in twos.
     wt = twoghts[pairs[-2]]
-    # Turn wt into a list, ordered by chars.
+    # Turn wt into a list, ordered by chars
     wt = [wt[c] for c in chars]
     # Randomly pick the next character using those weights.
     nextc = random.choices(chars, weights=wt, k=1)[0]
