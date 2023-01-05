@@ -1,6 +1,6 @@
-##Exercise 1
-##Adapt the code above to generate a 1000 character long string with weights based on the previous two characters.
-# Make HTTP requests for internet reqources.
+# Exercise 1
+# Adapt the code above to generate a 1000 character long string with weights based on the previous two characters.
+# Note: I wasn't able to load the Alice In Wonderland text to Jupyter, so this part of the homework exercises was completed using visual studios.
 
 # Load Libraries
 import random
