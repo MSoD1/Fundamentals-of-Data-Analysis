@@ -2,7 +2,7 @@
 ##Adapt the code above to generate a 1000 character long string with weights based on the previous two characters.
 # Make HTTP requests for internet reqources.
 
-# For doing (pseudo-)random things in Python.
+# Load Libraries
 import random
 import urllib.request
 
@@ -34,16 +34,15 @@ N = len(alice)
 # Get the whole book in one big string.
 sbook = ''.join(book[26:]).lower()
 
-# Print.
-#print(wgenr)
 ################################################################
-## This contains a dictionary c= chars and each of the values is another dictortionary d
+## This contains a dictionary, where chars = c and each values is contained in another dictortionary d
 ### ie go through the list of char twice... aa,ab,ac,ad...ba,bb,bc
 twoghts = {c: {d:  sbook.count(c + d )  for d in chars} for c in chars}
 
+## Picking the letters th as the starting point
 pairs = 'th'
 
-# Do the following N-1 times.
+# Do the following N = 1000 times.
 for i in range(1, 1000):
     # Get the weights where the previous character is the last character in twos.
     wt = twoghts[pairs[-2]]
